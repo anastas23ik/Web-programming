@@ -124,7 +124,7 @@
   }
   
   .lined_header {
-    background: url("../assets/img/gradient_line.svg") no-repeat 0 0 transparent;
+    background: url("./assets/img/gradient_line.svg") no-repeat 0 0 transparent;
     padding: 1rem 0;
   }
   
@@ -238,7 +238,7 @@
     padding: 3rem;
     margin: 6rem 0;
     row-gap: 7rem;
-    background: url(../assets/img/what_is_gpt_3_bg.svg) no-repeat 0 0 / cover;
+    background: url(./assets/img/what_is_gpt_3_bg.svg) no-repeat 0 0 / cover;
   }
   
   .what_is_chatgpt_section .what_is_chatgpt_section__top {
@@ -355,6 +355,63 @@
     width: 55%;
     color: #81afdd;
   }
+
+  /*Секция "Превосходя все ожидания"*/
+  .exceeding_all_expectations {
+    display: flex;
+    justify-content: center;
+    min-height: 60vh;
+    
+    column-gap: 1rem;
+    padding-left:3rem;
+    padding-right:3rem;
+  }
+  .exceeding_all_expectations .exceeding_all_expectations__left{
+    height: 100%;
+  }
+  .exceeding_all_expectations .exceeding_all_expectations__left img{
+    width: 100%;
+  }
+  .exceeding_all_expectations .exceeding_all_expectations__right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    align-self: flex-end;
+    margin-bottom: 3rem;
+  }
+  .exceeding_all_expectations .exceeding_all_expectations__right .bottom__cta{
+    color: #FF8A71;
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+  }
+  .exceeding_all_expectations .exceeding_all_expectations__right .bottom__cta:hover{
+    border-bottom: 1px solid #ff8a71;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  .exceeding_all_expectations .exceeding_all_expectations__right .top__cta{
+    color:#71E5FF;
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+  }
+  .exceeding_all_expectations .exceeding_all_expectations__right .top__cta:hover{
+    border-bottom: 1px solid #71E5FF;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  .exceeding_all_expectations .exceeding_all_expectations__right p{
+    color: #81AFDD;
+    line-height: 1.8;
+  }
+
   /* Медиа запросы для адаптива */
   
   @media screen and (max-width: 1024px) {
