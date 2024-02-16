@@ -521,15 +521,20 @@
   display: flex;
   justify-content: space-between;
   margin-top: 200px;
+  margin-bottom: 200px;
 }
 .footer_item_logo p{
   width: 186px;
   font-size: 12px;
+  color: #bdbebd;
   line-height: 1.6;
 }
 .footer_item_logo img{
   width:118px;
   margin-bottom: 20px;
+}
+.footer__end {
+  position: relative;
 }
 .footer__end h1{
   width: 821px;
@@ -552,17 +557,21 @@ gap:50px;
 .footer .footer_item{
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap:30px;
   align-items:flex-start;
  
 }
 .footer_item p{
   font-family: "ManropeBold", sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
 
 }
 .footer_item a{
   font-size: 12px;
+  color: #bdbebd;
 }
+
   /* Медиа запросы для адаптива */
   
   @media screen and (max-width: 1024px) {
