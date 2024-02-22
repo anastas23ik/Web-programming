@@ -225,9 +225,11 @@
   
   .brands_section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 0 0 6rem 0;
+    row-gap: 2rem;
     column-gap: 3rem;
   }
   
@@ -574,8 +576,23 @@ gap:50px;
 
   /* Медиа запросы для адаптива */
   
-  @media screen and (max-width: 1024px) {
-    .header {
-      flex-direction: column;
-    }
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
   }
+}
+  
+@media screen and (max-width: 766px) {
+  .brands_section {
+    margin-top: -15px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 765px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
