@@ -420,7 +420,7 @@
   .limitless_possibilities{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    flex-wrap: wrap;
     padding: 3rem;
     margin: 6rem 0;
     row-gap: 1rem;
@@ -463,7 +463,8 @@
     min-height: 600px;
     /* border: 1px solid #ff4820; */
     grid-auto-rows: auto; 
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: 1.5fr 1fr 1fr;
+    /* gap: 10px; */
     grid-gap: 50px; 
   }
   .blog .blog_grid_container {
@@ -476,14 +477,7 @@
   .blog .blog_grid_container:nth-child(1) {
     grid-column: 1 / 2;
     grid-row: 1 / 3; 
-    width: 400px;
     height: 100%;
-  }
-  .blog .blog_grid_container:nth-child(1) {
-    grid-column: 1 / 2;
-  }
-  .blog .blog_grid_container:nth-child(1) {
-    grid-column: 1 / 2;
   }
   .blog .blog_grid_container img {
     width: 100%;
@@ -521,6 +515,8 @@
   /* footer */
 .footer {
   display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
   justify-content: space-between;
   margin-top: 200px;
   margin-bottom: 200px;
@@ -536,10 +532,10 @@
   margin-bottom: 20px;
 }
 .footer__end {
-  position: relative;
+  /* position: relative; */
 }
 .footer__end h1{
-  width: 821px;
+  /* width: 821px; */
   text-align: center;
   margin:0 auto;
   margin-top: 200px;
@@ -553,6 +549,7 @@
 }
 .footer .footer_items{
 display: flex;
+flex-wrap: wrap;
 justify-content: space-between;
 gap:50px;
 }
@@ -580,12 +577,201 @@ gap:50px;
   .header {
     flex-direction: column;
   }
+
+  /* hero_section*/
+  .hero_section {
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 0;
+    /* margin: 0; */
+    width: 90%;
+  }
+
+  .hero_section .hero_section__left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero_section .hero_section__right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero_section .hero_section__right img {
+    width: 60%;
+  }
+
+  .hero_section .hero_section__left .left__cta_buttons {
+    justify-content: center;
+  }
+
+  /* what_is_chatgpt*/
+  .what_is_chatgpt_section {
+    row-gap: 4rem;
+  }
+
+  .what_is_chatgpt_section .what_is_chatgpt_section__middle {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .what_is_chatgpt_section .what_is_chatgpt_section__bottom .bottom__container {
+    row-gap: 0;
+  }
+/*future_here*/
+.future_here {
+  column-gap: 0;
+  flex-direction: column;
+  row-gap: 4rem;
 }
+
+.future_here .future_here__left {
+  row-gap: 1rem;
+}
+/*exceeding_all_expectations*/
+.exceeding_all_expectations {
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 0;
+  row-gap: 3rem;
+  /* border:1px solid #71E5FF; */
+  /* width: 90%; */
+}
+.exceeding_all_expectations .exceeding_all_expectations__right{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.exceeding_all_expectations .exceeding_all_expectations__left{
+  display: flex;
+  justify-content: center;
+}
+.exceeding_all_expectations .exceeding_all_expectations__left img{
+  width: 80%;
+}
+/*limitless_possibilities*/
+.limitless_possibilities{
+
+}
+.limitless_possibilities .limitless_possibilities__middle{
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+/*blog*/
+.blog {
+  
+}
+.blog .blog_containers{
+  grid-template-columns: 1fr 1fr;
+}
+/* .footer .footer_items{
+  justify-content: space-between;
+}  */
+} 
   
 @media screen and (max-width: 766px) {
+  a {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
   .brands_section {
     margin-top: -15px;
     padding-bottom: 0;
+  }
+  .hero_section {
+    width: 100%;
+  }
+  .hero_section .hero_section__right img {
+    width: 85%;
+  }
+  .hero_section .hero_section__left .left__cta_buttons input[type="text"] {
+    min-width: auto;
+  }
+
+  .what_is_chatgpt_section .what_is_chatgpt_section__top {
+    flex-direction: column;
+  }
+  
+  .what_is_chatgpt_section .what_is_chatgpt_section__middle .middle__header {
+    width: auto;
+  }
+
+  .what_is_chatgpt_section .what_is_chatgpt_section__bottom {
+    flex-direction: column;
+  }
+
+  .what_is_chatgpt_section .what_is_chatgpt_section__bottom {
+    row-gap: 2rem;
+  }
+
+  .what_is_chatgpt_section {
+    row-gap: 3rem;
+  }
+
+  .what_is_chatgpt_section {
+    margin: 6rem 0 0;
+  }
+
+  .what_is_chatgpt_section
+    .what_is_chatgpt_section__bottom
+    .bottom__container
+    .container__content {
+    line-height: 1.5;
+  }
+
+  .future_here {
+    row-gap: 3rem;
+  }
+
+  .future_here .future_here__right .right__container {
+    flex-direction: column;
+  }
+
+  .future_here .future_here__right .right__container .container__header {
+    width: 100%;
+  }
+
+  .future_here .future_here__right .right__container .container__content {
+    width: 100%;
+  }
+
+  .future_here .future_here__right {
+    row-gap: 2rem;
+  }
+
+  .limitless_possibilities{
+
+  }
+  .footer {
+    
+    
+
+  }
+  .footer .footer_items{
+    gap: 3rem;
+    justify-content: start;
+  } 
+  .blog .blog_containers {
+    grid-template-columns: 1fr; /* Все элементы теперь будут располагаться вертикально */
+  }
+  .blog .blog_grid_container {
+    grid-column: auto; 
+    grid-row: auto;   
   }
 }
 
@@ -595,4 +781,5 @@ gap:50px;
 
 @media screen and (max-width: 480px) {
 
+  
 }
