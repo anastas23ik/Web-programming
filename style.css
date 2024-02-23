@@ -718,11 +718,23 @@ gap:50px;
     row-gap: 1rem;
   }
 
-  .header .header__menu .menu__close {
+  /* .header .header__menu .menu__close {
     position: absolute;
     right: -100px;
     top: -100px;
+  } */
+  .header .cta_buttons {
+    position: relative;
+    width: 100%;
+    justify-content: center;
   }
+
+  .cta_buttons .menu__close {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+  }
+
 
   .header .header__menu .menu .menu__item a {
     font-size: 48px;
@@ -926,8 +938,10 @@ gap:50px;
   }
 }
 
-@media screen and (max-width: 765px) {
-
+@media screen and (min-width: 1024px) and (max-width: 1250px){
+  .header {
+    padding: 2rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
